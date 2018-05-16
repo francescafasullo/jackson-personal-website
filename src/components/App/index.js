@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './style.css';
+import Navbar from '../Navbar/'
+import headshot from '../../fisherHeadshot.jpg'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Jackson Fisher</h1>
-        </header>
+      <Navbar />
+      <img src={headshot} />
       </div>
     );
   }
